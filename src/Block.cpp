@@ -40,6 +40,26 @@ Block::Block(float x, float y, float z)
     }
 }
 
+Block::Block(float posx, float posy, float posz, float x, float y, float z)
+{
+    this->posx = posx;
+    this->posy = posy;
+    this->posz = posz;
+
+    this->x = x;
+    this->y = y;
+    this->z = z;
+
+    for (int i = 0; i < 6; i++)
+    {
+        textures[i] = 0;
+    }
+    for (int j = 0; j < 3; j ++)
+    {
+        anchor[j] = 0;
+    }
+}
+
 void Block::Draw()
 {
     glEnable(GL_TEXTURE_2D);
@@ -49,8 +69,6 @@ void Block::Draw()
     if (anchor[0]) glTranslatef(-x/2, 0.0f, 0.0f);
     if (anchor[1]) glTranslatef(0.0f, -y/2, 0.0f);
     if (anchor[2]) glTranslatef(0.0f, 0.0f, -z/2);
-
-
 
     /** FRONT **/
 
@@ -62,13 +80,13 @@ void Block::Draw()
 
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(posx, posy, posz);
         glTexCoord2f(0.0f, y/TEXTURE_SCALE);
-        glVertex3f(0.0f, y, 0.0f);
+        glVertex3f(posx, posy, posz);
         glTexCoord2f(x/TEXTURE_SCALE, y/TEXTURE_SCALE);
-        glVertex3f(x, y, 0.0f);
+        glVertex3f(posx + x, posy + y, posz);
         glTexCoord2f(x/TEXTURE_SCALE, 0.0f);
-        glVertex3f(x, 0.0f, 0.0f);
+        glVertex3f(posx + x, posy, posz);
     glEnd();
 
     /** BACK **/
@@ -81,13 +99,13 @@ void Block::Draw()
 
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex3f(0.0f, 0.0f, z);
+        glVertex3f(posx, posy, posz + z);
         glTexCoord2f(0.0f, y/TEXTURE_SCALE);
-        glVertex3f(0.0f, y, z);
+        glVertex3f(posx, posy + y, posz + z);
         glTexCoord2f(x/TEXTURE_SCALE, y/TEXTURE_SCALE);
-        glVertex3f(x, y, z);
+        glVertex3f(posx + x, posy + y, posz + z);
         glTexCoord2f(x/TEXTURE_SCALE, 0.0f);
-        glVertex3f(x, 0.0f, z);
+        glVertex3f(posx + x, posy, posz + z);
     glEnd();
 
     /** TOP **/
@@ -100,13 +118,13 @@ void Block::Draw()
 
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex3f(0.0f, y, 0.0f);
+        glVertex3f(posx, posy + y, posz);
         glTexCoord2f(0.0f, y/TEXTURE_SCALE);
-        glVertex3f(0.0f, y, z);
+        glVertex3f(posx, posy + y, posz + z);
         glTexCoord2f(x/TEXTURE_SCALE, y/TEXTURE_SCALE);
-        glVertex3f(x, y, z);
+        glVertex3f(posx + x, posy + y, posz + z);
         glTexCoord2f(x/TEXTURE_SCALE, 0.0f);
-        glVertex3f(x, y, 0.0f);
+        glVertex3f(posx + x, posy + y, posz);
     glEnd();
 
     /** BOT **/
@@ -119,13 +137,13 @@ void Block::Draw()
 
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(posx, posy, posz);
         glTexCoord2f(0.0f, z/TEXTURE_SCALE);
-        glVertex3f(0.0f, 0.0f, z);
+        glVertex3f(posx, posy, posz + z);
         glTexCoord2f(x/TEXTURE_SCALE, z/TEXTURE_SCALE);
-        glVertex3f(x, 0.0f, z);
+        glVertex3f(posx + x, posy, posz + z);
         glTexCoord2f(x/TEXTURE_SCALE, 0.0f);
-        glVertex3f(x, 0.0f, 0.0f);
+        glVertex3f(posx + x, posy, posz);
     glEnd();
 
     /** LEFT **/
@@ -138,13 +156,13 @@ void Block::Draw()
 
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(posx, posy, posz);
         glTexCoord2f(0.0f, z/TEXTURE_SCALE);
-        glVertex3f(0.0f, 0.0f, z);
+        glVertex3f(posx, posy, posz + z);
         glTexCoord2f(y/TEXTURE_SCALE, z/TEXTURE_SCALE);
-        glVertex3f(0.0f, y, z);
+        glVertex3f(posx, posy + y, posz + z);
         glTexCoord2f(y/TEXTURE_SCALE, 0.0f);
-        glVertex3f(0.0f, y, 0.0f);
+        glVertex3f(posx, posy + y, posz);
     glEnd();
 
     /** RIGHT **/
@@ -157,13 +175,13 @@ void Block::Draw()
 
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex3f(x, 0.0f, 0.0f);
+        glVertex3f(posx + x, posy, posz);
         glTexCoord2f(0.0f, z/TEXTURE_SCALE);
-        glVertex3f(x, 0.0f, z);
+        glVertex3f(posx + x, posy, posz + z);
         glTexCoord2f(y/TEXTURE_SCALE, z/TEXTURE_SCALE);
-        glVertex3f(x, y, z);
+        glVertex3f(posx + x, posy + y, posz + z);
         glTexCoord2f(y/TEXTURE_SCALE, 0.0f);
-        glVertex3f(x, y, 0.0f);
+        glVertex3f(posx + x, posy + y, posz);
     glEnd();
 
     glPopMatrix();

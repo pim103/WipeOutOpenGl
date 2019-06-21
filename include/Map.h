@@ -16,6 +16,7 @@ class Map
         // Stockage des références aux textures
         GLuint ListeTextures[20];
         GLuint Skybox[6];
+        GLuint CarTextures[6];
         void LoadTextures(void);
         void DrawGround(void);
         void DrawSkybox(Camera *cam);

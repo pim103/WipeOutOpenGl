@@ -8,6 +8,8 @@
 
 #include "Camera.h"
 #include "Map.h"
+#include "Vehicle.h"
+#include "Controller.h"
 
 
 // Objet Camera
@@ -15,7 +17,9 @@ Camera *cam = new Camera();
 // Objet Scène
 Map *m = new Map();
 
+Vehicle *v = new Vehicle();
 
+Controller *controller = new Controller();
 
 /** GESTION FENETRE **/
 void reshapeWindow(int w, int h)
@@ -36,6 +40,8 @@ void reshapeWindow(int w, int h)
 /** FONCTIONS DE GESTION CLAVIER **/
 void KeyboardDown(unsigned char key, int xx, int yy)
 {
+    controller->MoveCar(key);
+
     switch(key)
     {
     case 'e': // Unlock Camera
@@ -146,12 +152,14 @@ void renderScene(void)
 
     m->DrawGround();
     m->DrawSkybox(cam);
+    v->DrawBody();
     glutSwapBuffers();
 }
 
 void LoadTextures()
 {
     m->LoadTextures();
+    v->CreateBody();
 }
 
 int main(int argc, char **argv)

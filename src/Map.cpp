@@ -40,11 +40,19 @@ void Map::LoadTextures()
     ListeTextures[18] = SOIL_load_OGL_texture("img/metalgate.bmp",SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
     //ListeTextures[19] = SOIL_load_OGL_texture("img/betonurban.bmp",SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
     ListeTextures[19] = SOIL_load_OGL_texture("img/terre.jpg",SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
+
+    CarTextures[0] = SOIL_load_OGL_texture("img/textureCar.jpg",SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
+    CarTextures[1] = 0;
+    CarTextures[2] = 0;
+    CarTextures[3] = 0;
+    CarTextures[4] = 0;
+    CarTextures[5] = 0;
 }
 
 void Map::DrawGround()
 {
     Block *b = new Block(2.0f, 2.0f, 2.0f);
+    Block *c = new Block(2.0f, 2.0f, 2.0f, 5.0f, 2.0f, 5.0f);
 
     glEnable(GL_TEXTURE_2D);
     glColor3f(1.0f, 1.0f, 1.0f);
@@ -73,6 +81,16 @@ void Map::DrawGround()
     b->SetTexture(LEFT, ListeTextures[9]);
     b->SetTexture(SPHERE, ListeTextures[19]);
     b->Draw();
+
+
+    c->SetTexture(FRONT, ListeTextures[1]);
+    c->SetTexture(BACK, ListeTextures[7]);
+    c->SetTexture(TOP, ListeTextures[12]);
+    c->SetTexture(BOT, ListeTextures[4]);
+    c->SetTexture(RIGHT, ListeTextures[17]);
+    c->SetTexture(LEFT, ListeTextures[9]);
+    c->SetTexture(SPHERE, ListeTextures[19]);
+    c->Draw();
 }
 
 void Map::DrawSkybox(Camera *cam)
