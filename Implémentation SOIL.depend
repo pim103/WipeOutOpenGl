@@ -293,3 +293,30 @@
 	"../include/Vehicle.h"
 	"../include/Map.h"
 
+1563121609 source:d:\cours esgi\projetopengl\src\quaternion.cpp
+	"../include/Quaternion.h"
+	<math.h>
+	"../include/Vector.h"
+
+1563121406 d:\cours esgi\projetopengl\include\quaternion.h
+	"../include/Vector.h"
+	<stdio.h>
+
+1563121335 d:\cours esgi\projetopengl\include\vector.h
+	<stdio.h>
+	<cmath>
+	<iostream>
+
+1563121292 source:d:\cours esgi\projetopengl\src\vector.cpp
+	"../include/Vector.h"
+	<cmath>
+	"../include/Quaternion.h"
+
+1563123685 source:d:\cours esgi\projetopengl\src\matrix.cpp
+	"Matrix.h"
+
+1563123691 d:\cours esgi\projetopengl\include\matrix.h
+	<stdio.h>
+	<iostream>
+	"Vector.h"
+

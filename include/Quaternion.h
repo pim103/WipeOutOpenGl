@@ -2,11 +2,12 @@
 #define QUATERNION_H
 
 #include "../include/Vector.h"
+#include <stdio.h>
+
 
 class Quaternion
 {
     public:
-        virtual ~Quaternion();
         float s;
 
         //vector
@@ -23,7 +24,7 @@ class Quaternion
 		//operators
 		void operator+=(const Quaternion& q);
 		Quaternion operator+(const Quaternion& q) const;
-		void Quaternion::operator-=(const Quaternion& q);
+		void operator-=(const Quaternion& q);
 		Quaternion operator-(const Quaternion& q) const;
 		void operator*=(const Quaternion& q);
 		Quaternion operator*(const Quaternion& q) const;

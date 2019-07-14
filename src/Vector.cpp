@@ -2,11 +2,6 @@
 #include <cmath>
 #include "../include/Quaternion.h"
 
-Vector::Vector()
-{
-
-}
-
 Vector::Vector(float px, float py, float pz )
 {
     //dtor

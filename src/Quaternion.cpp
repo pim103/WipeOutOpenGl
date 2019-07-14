@@ -5,15 +5,7 @@
 #define DegreesToRad(angle) angle*M_PI/180
 #define RadToDegrees(angle) angle*180/M_PI
 
-Quaternion::Quaternion(float uS,Vector& uV){
-    s = uS;
-    v = uV;
-}
-
-Quaternion::~Quaternion()
-{
-    //dtor
-}
+Quaternion::Quaternion(float uS,Vector& uV):s(uS),v(uV){}
 
 void Quaternion::operator+=(const Quaternion& q) {
 

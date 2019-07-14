@@ -1,1 +1,8 @@
-﻿LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'glut32.lib'
+﻿  Quaternion.cpp
+D:\cours ESGI\ProjetOpenGL\src\Quaternion.cpp(76): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\cours ESGI\ProjetOpenGL\src\Quaternion.cpp(78): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+D:\cours ESGI\ProjetOpenGL\src\Quaternion.cpp(79): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+D:\cours ESGI\ProjetOpenGL\src\Quaternion.cpp(110): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+  Vector.cpp
+  Génération de code en cours...
+LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'glut32.lib'
