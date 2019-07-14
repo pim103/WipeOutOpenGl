@@ -27,7 +27,6 @@ class Camera
         void grabCam(int x, int y);
         void orienterCam(int x, int y);
 
-
     protected:
     private:
 

@@ -178,10 +178,11 @@
 	"Map.h"
 	"Block.h"
 
-1559316189 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\block.cpp
-	"Block.h"
+1563124508 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\block.cpp
+	"../include/Block.h"
 
-1559309596 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
+1563124508 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
+	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
@@ -194,47 +195,57 @@
 
 1215454408 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\soil.h
 
-1396000820 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
-	"Camera.h"
+1563124560 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
+	"../include/Camera.h"
 	<math.h>
+	<stdio.h>
+	"Camera.h"
+	"Vehicle.h"
 
-1395963666 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\camera.h
+1563124520 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\camera.h
 
-1561122971 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
+1563124593 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
+	<stdio.h>
 	<stdlib.h>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"../include/glut.h"
+	"../include/SOIL.h"
+	"../include/Camera.h"
+	"../include/Map.h"
+	"../include/Vehicle.h"
+	"../include/Controller.h"
+
+1563124508 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
+	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 	"Camera.h"
-	"Map.h"
-	"Vehicle.h"
+
+1563124508 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\map.cpp
+	"../include/Map.h"
+	"../include/Block.h"
+
+1563124578 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vehicle.cpp
+	<math.h>
+	<stdio.h>
+	"Block.h"
 	"Controller.h"
-
-1559314946 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
-	<GL/gl.h>
-	<GL/glu.h>
-	"glut.h"
-	"SOIL.h"
-	"Camera.h"
-
-1559316647 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\map.cpp
-	"Map.h"
-	"Block.h"
-
-1559316672 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vehicle.cpp
-	"Block.h"
 	"Vehicle.h"
 	"Map.h"
 
-1559315499 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vehicle.h
+1563124541 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vehicle.h
 	"Block.h"
 
-1561122953 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\controller.cpp
+1563124566 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\controller.cpp
 	<stdlib.h>
+	"Vehicle.h"
 	"Controller.h"
 
-1561122853 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\controller.h
+1563124537 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\controller.h
 
 1561124888 source:d:\cours esgi\projetopengl\src\block.cpp
 	"../include/Block.h"
@@ -319,4 +330,23 @@
 	<stdio.h>
 	<iostream>
 	"Vector.h"
+
+1563124510 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\quaternion.cpp
+	"../include/Quaternion.h"
+	<math.h>
+	"../include/Vector.h"
+
+1563124510 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\quaternion.h
+	"../include/Vector.h"
+	<stdio.h>
+
+1563124510 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vector.h
+	<stdio.h>
+	<cmath>
+	<iostream>
+
+1563124510 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vector.cpp
+	"../include/Vector.h"
+	<cmath>
+	"../include/Quaternion.h"
 

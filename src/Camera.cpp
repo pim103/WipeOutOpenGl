@@ -1,6 +1,21 @@
 #include "../include/Camera.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
+#include <stdio.h>
+
+#include "Camera.h"
+#include "Vehicle.h"
+
+
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+
+#ifndef M_PI_2
+    #define M_PI_2 3.14159265358979323846/2
+#endif
+
+extern Vehicle *v;
 
 Camera::Camera()
 {
@@ -25,13 +40,18 @@ Camera::Camera()
     deltaAngley = 0.0f;
 
 
-
     locked = 1;
 }
 
 void Camera::updatePos()
 {
-    if (deltaForward || deltaStrafe)
+    if(v->lockedOnVehicle)
+    {
+        posx = v->body->posx + 0.5;
+        posy = v->body->posy + 3;
+        posz = v->body->posz + 1;
+    }
+    else if (deltaForward || deltaStrafe)
     {
         if (locked)
         {
@@ -40,7 +60,6 @@ void Camera::updatePos()
             posz += deltaForward * (dirz/cos(anglev + deltaAngley)) * MOVE_SPEED;
             posx += deltaStrafe * (dirz/cos(anglev + deltaAngley)) * MOVE_SPEED;
             posz -= deltaStrafe * (dirx/cos(anglev + deltaAngley)) * MOVE_SPEED;
-
         }
         else
         {
@@ -74,7 +93,7 @@ void Camera::orienterCam(int x, int y)
         if (deltaAngley + anglev < -M_PI_2)
             deltaAngley = -M_PI_2 - anglev + 0.01f;
 
-        // Mis à jour de la caméra
+        // Mis ï¿½ jour de la camï¿½ra
         dirx = sin(angleh + deltaAnglex)*cos(anglev + deltaAngley);
         diry = -sin(anglev + deltaAngley);
         dirz = -cos(angleh + deltaAnglex)*cos(anglev + deltaAngley);

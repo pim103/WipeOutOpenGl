@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 #include <windows.h>
@@ -15,12 +16,12 @@
 
 // Objet Camera
 Camera *cam = new Camera();
-// Objet Scène
+// Objet Scï¿½ne
 Map *m = new Map();
 
 Vehicle *v = new Vehicle();
 
-//Controller *controller = new Controller();
+Controller *controller = new Controller();
 
 /** GESTION FENETRE **/
 void reshapeWindow(int w, int h)
@@ -41,11 +42,14 @@ void reshapeWindow(int w, int h)
 /** FONCTIONS DE GESTION CLAVIER **/
 void KeyboardDown(unsigned char key, int xx, int yy)
 {
+    controller->GetPlayerIntent(key);
+
     switch(key)
     {
-    case 'e': // Unlock Camera
-        cam->locked = (cam->locked)?0:1;
-        break;
+        case 'e': // Unlock Camera
+            cam->locked = (cam->locked)?0:1;
+            break;
+        /*
     case 'z':
         cam->deltaForward = 1;
         break;
@@ -58,10 +62,13 @@ void KeyboardDown(unsigned char key, int xx, int yy)
     case 'q':
         cam->deltaStrafe = 1;
         break;
+        */
     }
 }
 void KeyboardUp(unsigned char key, int xx, int yy)
 {
+    controller->ReleasePlayerIntent(key);
+    /*
     switch(key)
     {
     case 'z':
@@ -72,7 +79,7 @@ void KeyboardUp(unsigned char key, int xx, int yy)
     case 'd':
         cam->deltaStrafe = 0;
         break;
-    }
+    }*/
 }
 void SpecialDown(int key, int xx, int yy)
 {
@@ -123,7 +130,7 @@ void mouseButton(int button, int state, int x, int y)
         {
             cam->releaseCam();
         }
-        // Mise à jour origine du clic
+        // Mise ï¿½ jour origine du clic
         else
         {
             cam->grabCam(x, y);
@@ -135,6 +142,7 @@ void mouseButton(int button, int state, int x, int y)
 void computePos(int inutile)
 {
     cam->updatePos();
+    v->UpdateVehicleMovement();
     glutTimerFunc(10, computePos, 0);
 }
 
@@ -143,7 +151,7 @@ void renderScene(void)
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
-    // Définition de la caméra
+    // Dï¿½finition de la camï¿½ra
     gluLookAt(  cam->posx, cam->posy, cam->posz,
                 cam->posx+cam->dirx, cam->posy+cam->diry,  cam->posz+cam->dirz,
                 0.0f, 1.0f,  0.0f
@@ -151,7 +159,9 @@ void renderScene(void)
 
     m->DrawGround();
     m->DrawSkybox(cam);
+
     v->DrawBody();
+
     glutSwapBuffers();
 }
 
@@ -168,7 +178,7 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
     glutInitWindowPosition(100,100);
     glutInitWindowSize(320,320);
-    glutCreateWindow("Implémentation :: Textures");
+    glutCreateWindow("Implï¿½mentation :: Textures");
 
     /** FONCTIONS GLUT **/
     glutDisplayFunc(renderScene);

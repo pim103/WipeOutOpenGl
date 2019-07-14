@@ -4,7 +4,13 @@
 class Controller {
     public:
         Controller();
-        int MoveCar(unsigned char);
+        void GetPlayerIntent(unsigned char);
+        void ReleasePlayerIntent(unsigned char key);
+
+        bool wantToMoveForward;
+        bool wantToMoveBack;
+        bool wantToMoveRight;
+        bool wantToMoveLeft;
     private:
     protected:
 };

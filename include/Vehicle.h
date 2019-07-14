@@ -8,6 +8,19 @@ class Vehicle{
         float x;
         float y;
         float z;
+        float speedVehicle;
+        bool lockedOnVehicle;
+        float sensibility;
+
+        float dirX;
+        float dirZ;
+
+        float angleH;
+        float angleY;
+        float deltaAngleX;
+        int xOrigin;
+        int inputRotation;
+        int yOrigin;
 
         Block *body;
 
@@ -16,8 +29,13 @@ class Vehicle{
         float scaleZ;
 
         Vehicle();
-		void CreateBody();
-		void DrawBody();
+        void UpdateVehicleMovement();
+        void CreateBody();
+        void DrawBody();
+        void OrienterVehicle();
+        void releaseDir();
+        void changeDir();
+
     private:
     protected:
 };
