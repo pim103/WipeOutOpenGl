@@ -1,15 +1,16 @@
 #include <stdlib.h>
 
+#include <windows.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 
-#include "glut.h"
-#include "SOIL.h"
+#include "../include/glut.h"
+#include "../include/SOIL.h"
 
-#include "Camera.h"
-#include "Map.h"
-#include "Vehicle.h"
-#include "Controller.h"
+#include "../include/Camera.h"
+#include "../include/Map.h"
+#include "../include/Vehicle.h"
+#include "../include/Controller.h"
 
 
 // Objet Camera
@@ -19,7 +20,7 @@ Map *m = new Map();
 
 Vehicle *v = new Vehicle();
 
-Controller *controller = new Controller();
+//Controller *controller = new Controller();
 
 /** GESTION FENETRE **/
 void reshapeWindow(int w, int h)
@@ -40,8 +41,6 @@ void reshapeWindow(int w, int h)
 /** FONCTIONS DE GESTION CLAVIER **/
 void KeyboardDown(unsigned char key, int xx, int yy)
 {
-    controller->MoveCar(key);
-
     switch(key)
     {
     case 'e': // Unlock Camera

@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#include "Controller.h"
+#include "../include/Controller.h"
 
 Controller::Controller()
 {

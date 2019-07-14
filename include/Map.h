@@ -1,6 +1,7 @@
 #ifndef MAP_H
 #define MAP_H
 
+#include <windows.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 

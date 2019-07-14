@@ -1,6 +1,6 @@
-#include "Block.h"
-#include "Vehicle.h"
-#include "Map.h"
+#include "../include/Block.h"
+#include "../include/Vehicle.h"
+#include "../include/Map.h"
 
 extern Map *m;
 
@@ -14,7 +14,7 @@ Vehicle::Vehicle(){
     this->scaleZ = 2.0;
 }
 
-Vehicle::CreateBody()
+void Vehicle::CreateBody()
 {
     body = new Block(x, y, z, scaleX, scaleY, scaleZ);
     body->SetTexture(FRONT, m->CarTextures[0]);
@@ -26,7 +26,7 @@ Vehicle::CreateBody()
     body->SetTexture(SPHERE, m->CarTextures[0]);
 }
 
-Vehicle::DrawBody()
+void Vehicle::DrawBody()
 {
     body->Draw();
 }

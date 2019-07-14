@@ -4,7 +4,7 @@
 class Controller {
     public:
         Controller();
-        MoveCar(unsigned char);
+        int MoveCar(unsigned char);
     private:
     protected:
 };

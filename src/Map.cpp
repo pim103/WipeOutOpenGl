@@ -1,5 +1,5 @@
-#include "Map.h"
-#include "Block.h"
+#include "../include/Map.h"
+#include "../include/Block.h"
 
 #define GL_CLAMP_TO_EDGE 0x812F
 #define SKY_DISTANCE 200.0f

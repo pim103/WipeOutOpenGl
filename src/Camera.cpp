@@ -1,4 +1,5 @@
-#include "Camera.h"
+#include "../include/Camera.h"
+#define _USE_MATH_DEFINES
 #include <math.h>
 
 Camera::Camera()

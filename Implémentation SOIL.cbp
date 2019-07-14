@@ -46,10 +46,14 @@
 		<Unit filename="include/Block.h" />
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Map.h" />
+		<Unit filename="include/Quaternion.h" />
+		<Unit filename="include/Vector.h" />
 		<Unit filename="include/Vehicle.h" />
 		<Unit filename="src/Block.cpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/Quaternion.cpp" />
+		<Unit filename="src/Vector.cpp" />
 		<Unit filename="src/Vehicle.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>

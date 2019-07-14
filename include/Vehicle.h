@@ -16,8 +16,8 @@ class Vehicle{
         float scaleZ;
 
         Vehicle();
-        CreateBody();
-        DrawBody();
+		void CreateBody();
+		void DrawBody();
     private:
     protected:
 };
