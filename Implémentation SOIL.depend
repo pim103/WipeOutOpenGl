@@ -181,8 +181,8 @@
 1563124508 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\block.cpp
 	"../include/Block.h"
 
-1563124508 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
-	<windows.h>
+1563204670 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
+	<GL/glew.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
@@ -195,7 +195,7 @@
 
 1215454408 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\soil.h
 
-1563190038 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
+1563204410 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
 	"../include/Camera.h"
 	<math.h>
 	<stdio.h>
@@ -205,10 +205,12 @@
 
 1563124520 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\camera.h
 
-1563190339 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
+1563204828 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
+	<GL/glew.h>
+	<../common/GLShader.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"../include/glut.h"
@@ -219,8 +221,8 @@
 	"../include/Controller.h"
 	"Ship.hpp"
 
-1563124508 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
-	<windows.h>
+1563204672 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
+	<GL/glew.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
@@ -377,7 +379,7 @@
 	<time.h>
 	<iostream>
 
-1563191266 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\ship.cpp
+1563191297 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\ship.cpp
 	<GLUT/glut.h>
 	<X11/Xlib.h>
 	<GL/gl.h>
@@ -406,4 +408,24 @@
 	<iostream>
 	<sstream>
 	"toolbox.hpp"
+
+1561564273 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.c
+	"GL/glew.h"
+	"../common/GLShader.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1561401962 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\libs\glew-2.1.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1557244063 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.h
+	<stdint.h>
+	<stdbool.h>
 

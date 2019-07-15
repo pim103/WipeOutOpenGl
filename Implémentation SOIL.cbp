@@ -27,22 +27,31 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add directory="lib" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-DGLEW_STATIC" />
 			<Add directory="include" />
+			<Add directory="libs/glew-2.1.0/include" />
 		</Compiler>
 		<Linker>
-			<Add library="lib/glut32.lib" />
-			<Add library="lib/libSOIL.a" />
+			<Add library="soil" />
+			<Add library="glew32s" />
+			<Add library="glut32" />
 			<Add library="glu32" />
 			<Add library="opengl32" />
 			<Add library="winmm" />
 			<Add library="gdi32" />
+			<Add directory="lib" />
 		</Linker>
+		<Unit filename="common/GLShader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common/GLShader.h" />
 		<Unit filename="include/Block.h" />
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Controller.h" />

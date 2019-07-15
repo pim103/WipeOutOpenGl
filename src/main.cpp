@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 #include <windows.h>
+#include <GL/glew.h>
+#include <../common/GLShader.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 
@@ -20,6 +22,8 @@ Ship *ship = Ship::getInstance();
 Camera *cam = new Camera();
 // Objet Sc�ne
 Map *m = new Map();
+
+GLShader shader;
 
 Vehicle *v = new Vehicle();
 
