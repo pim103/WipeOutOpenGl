@@ -1,10 +1,12 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "Block.h"
-#include "Controller.h"
-#include "Vehicle.h"
-#include "Map.h"
+#include "../include/Block.h"
+#include "../include/Controller.h"
+#include "../include/Vehicle.h"
+#include "../include/Map.h"
+#include "../include/Quaternion.h"
+#include "../include/Vector.h"
 
 #ifndef M_PI
     #define M_PI 3.14159265358979323846
@@ -39,8 +41,10 @@ Vehicle::Vehicle(){
 
     this->inputRotation = 0.0f;
     this->lockedOnVehicle = true;
-
-    this->speedVehicle = 0.3;
+    this->speedVehicle = 0.1;
+    this->vec = new Vector(1.f,0.f,0.f);
+    this->vecAxis = new Vector(0.f,1.f,0.f);
+    this->quat = new Quaternion(0.0f,*vec);
 }
 
 void Vehicle::UpdateVehicleMovement()
@@ -53,8 +57,8 @@ void Vehicle::UpdateVehicleMovement()
     }else if(controller->wantToMoveBack)
     {
         //dirX -= speedVehicle;
-        body->posx += dirX * speedVehicle;
-        body->posz -= dirZ * speedVehicle;
+        body->posx += speedVehicle;
+        body->posz -= speedVehicle;
     }
 
     if(controller->wantToMoveRight)
@@ -64,6 +68,7 @@ void Vehicle::UpdateVehicleMovement()
             angleY = 360;
         }
 
+        inputRotation -= 5;
         OrienterVehicle();
     }
     if(controller->wantToMoveLeft)
@@ -73,6 +78,7 @@ void Vehicle::UpdateVehicleMovement()
             angleY = 0;
         }
 
+        inputRotation += 5;
         OrienterVehicle();
     }
 }
@@ -91,18 +97,55 @@ void Vehicle::CreateBody()
 
 void Vehicle::DrawBody()
 {
+    /*
+    int goForward = 0;
+    if (controller->wantToMoveForward) {
+        goForward = 1;
+    } else if(controller->wantToMoveBack) {
+        goForward = -1;
+    } else {
+        goForward = 0;
+    }
+
+    body->posx += goForward * (dirX * speedVehicle);
+    body->posz += goForward * (dirZ * speedVehicle);
+    */
+
     glPushMatrix();
         glTranslatef(body->x + body->posx, 0, body->z + body->posz);
-        glRotatef(angleY, 0, 1, 0);
+        printf("before rot %f,%f,%f\n",quat->v.x,quat->v.y,quat->v.z);
+        quat->v = quat->v.rotateVectorAboutAngleAndAxis(angleY,*vecAxis);
+        printf("%f\n",angleY);
+        printf("after rot %f,%f,%f\n",quat->v.x,quat->v.y,quat->v.z);
+        //glRotatef(angleY, 0, 1, 0);
+        Matrix4x4 m4 = quat->createMatrix();
+        //glLoadMatrixf(m4.m);
+        glMultMatrixf(m4.m);
+        for(int i = 0;i<16;i++){
+            printf("%f",m4.m[i]);
+        }
+        printf("\n");
         glTranslatef(-(body->x + body->posx), 0, -(body->z + body->posz));
+        //glMultMatrixf()
         body->Draw();
     glPopMatrix();
 }
 
 void Vehicle::OrienterVehicle()
 {
-    dirX = sin(angleY * (M_PI / 180));
-    dirZ = -cos(angleY * (M_PI/180));
+
+    deltaAngleX = (inputRotation - xOrigin) * sensibility;
+    //deltaAngleX = angleY;
+
+    // Correction de l'angle ]-Pi; Pi[
+
+    while (deltaAngleX + angleH > M_PI)
+        deltaAngleX -= M_PI * 2;
+    while (deltaAngleX + angleH < -M_PI)
+        deltaAngleX += M_PI * 2;
+
+    dirX = sin(angleH + deltaAngleX);
+    dirZ = -cos(angleH + deltaAngleX);
 }
 
 void Vehicle::releaseDir()

@@ -2,6 +2,7 @@
 #define VEHICLE_H_INCLUDED
 
 #include "Block.h"
+#include "Quaternion.h"
 
 class Vehicle{
     public:
@@ -23,6 +24,9 @@ class Vehicle{
         int yOrigin;
 
         Block *body;
+        Quaternion *quat;
+        Vector *vec;
+        Vector *vecAxis;
 
         float scaleX;
         float scaleY;

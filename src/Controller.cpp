@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
-#include "Vehicle.h"
-#include "Controller.h"
+#include "../include/Vehicle.h"
+#include "../include/Controller.h"
 
 extern Vehicle *v;
 
