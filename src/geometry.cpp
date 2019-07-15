@@ -16,7 +16,6 @@
 #include <stdio.h>
 
 #include "config.hpp"
-#include "glut_tools.hpp"
 #include "geometry.hpp"
 #include "toolbox.hpp"
 

@@ -2,7 +2,7 @@
 #define MATRIX4X4_H
 
 #include "Vector.h"
-#include"GL/glut.h"
+
 class Matrix4x4
 {
     public:
@@ -24,9 +24,9 @@ class Matrix4x4
         void        setColumn(int index, const float col[4]);
         void        setColumn(int index, const Vector& v);
 
-        GLfloat* transformMatrixToGLFloat();
+        float* transformMatrixToGLFloat();
 
-        GLfloat m[16];
+        float m[16];
         float tm[16];
     protected:
 

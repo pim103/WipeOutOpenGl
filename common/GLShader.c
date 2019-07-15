@@ -30,7 +30,7 @@ char* LoadSource(const char *filename)
 	rewind(fp);
 
 	/* on alloue de la memoire pour y placer notre code source */
-	src = malloc(size + 1); /* +1 pour le caractere de fin de chaine '\0' */
+	src = (char*)malloc(size + 1); /* +1 pour le caractere de fin de chaine '\0' */
 	if (src == NULL)
 	{
 		fclose(fp);
@@ -81,7 +81,7 @@ uint32_t CompileShader(const char* filename, uint32_t type)
 		glGetShaderiv(shaderObject, GL_INFO_LOG_LENGTH, &logsize);
 
 		/* on alloue un espace memoire dans lequel OpenGL ecrira le message */
-		log = malloc(logsize + 1);
+		log = (char*)malloc(logsize + 1);
 		if (log == NULL)
 		{
 			fprintf(stderr, "impossible d'allouer de la memoire !\n");
@@ -145,7 +145,7 @@ bool LinkProgram(GLShader shader)
 		glGetProgramiv(shader._Program, GL_INFO_LOG_LENGTH, &logsize);
 
 		/* on alloue un espace memoire dans lequel OpenGL ecrira le message */
-		log = malloc(logsize + 1);
+		log = (char*)malloc(logsize + 1);
 		if (log == NULL)
 		{
 			fprintf(stderr, "impossible d'allouer de la memoire !\n");

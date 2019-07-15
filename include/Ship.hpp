@@ -5,6 +5,9 @@
 #define START_SPEED 0.5
 #define DEFAULT_SPEED 0.1 // Lowest speed
 
+#include "Vector.h"
+#include "Quaternion.h"
+
 enum{IDLE, FAST, SLOW};
 
 enum {
@@ -233,6 +236,12 @@ class Ship{
 
   bool rightWing;
   bool leftWing;
+  Vector *vec;
+  Quaternion *quat;
+  Vector *vecRoll;
+  Quaternion *quatRoll;
+  void RotateWithQuaternion(float angle);
+  void BarrelRollWithQuaternion(float angle);
 };
 
 #endif // SHIP_HPP_INCLUDED

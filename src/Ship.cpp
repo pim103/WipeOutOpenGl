@@ -67,6 +67,12 @@ Ship::Ship(){
 
     leftWing = true;
     rightWing = true;
+
+    this->vec = new Vector(1.0f,0.0f,0.0f);
+    this->quat = new Quaternion(0.0f,*vec);
+
+    this->vecRoll = new Vector(1.0f,0.0f,0.0f);
+    this->quatRoll = new Quaternion(0.0f,*vecRoll);
 }
 
 Ship *Ship::getInstance(){
@@ -205,7 +211,8 @@ void Ship::autoRotate(){
 
   if (_doRotate) angle += 0.1;
 
-  glRotatef(angle, 0.0, 1.0, 0.0);
+  //glRotatef(angle, 0.0, 1.0, 0.0);
+  RotateWithQuaternion(angle);
 }
 
 void Ship::Roll(){
@@ -226,8 +233,9 @@ void Ship::Roll(){
             barrelAngle += 2;
         }
     }
+    BarrelRollWithQuaternion(barrelAngle);
+    //glRotatef(barrelAngle, 0.0, 0.0, 1.0);
 
-    glRotatef(barrelAngle, 0.0, 0.0, 1.0);
 }
 
 void Ship::looping(){
@@ -690,10 +698,11 @@ void Ship::animateReactor(){
 void Ship::display(){
     glPushMatrix();
         glTranslatef(posX, 0, posZ);
-        glRotatef(angleY, 0, 1, 0);
+        //glRotatef(angleY, 0, 1, 0);
+        RotateWithQuaternion(angleY);
 
         // ANIMATE
-        autoRotate();
+       //utoRotate();
         Roll();
         looping();
         immelmann();
@@ -874,6 +883,25 @@ void Ship::OrienterVehicle()
     dirZ = -cos(angleY * (M_PI/180));
 }
 
+void Ship::RotateWithQuaternion(float angle){
+    Vector *vtest= new Vector(0.f,1.f,0.f);
+    quat->v = quat->v.rotateVectorAboutAngleAndAxis(angleY/2,*vtest);
+    //glRotatef(angleY, 0, 1, 0);
+    Matrix4x4 m4 = quat->createMatrix();
+    //glLoadMatrixf(m4.m);
+    glMultMatrixf(m4.m);
+    quat->v = quat->v.rotateVectorAboutAngleAndAxis(-angleY/2,*vtest);
+}
+
+void Ship::BarrelRollWithQuaternion(float angle){
+    Vector *vtest= new Vector(0.f,0.f,1.f);
+    quat->v = quat->v.rotateVectorAboutAngleAndAxis(-angle/2,*vtest);
+    //glRotatef(angleY, 0, 1, 0);
+    Matrix4x4 m4 = quat->createMatrix();
+    //glLoadMatrixf(m4.m);
+    glMultMatrixf(m4.m);
+    quat->v = quat->v.rotateVectorAboutAngleAndAxis(angle/2,*vtest);
+}
 /*
 void Ship::checkIntegrity()
 {

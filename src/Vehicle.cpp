@@ -113,18 +113,12 @@ void Vehicle::DrawBody()
 
     glPushMatrix();
         glTranslatef(body->x + body->posx, 0, body->z + body->posz);
-        printf("before rot %f,%f,%f\n",quat->v.x,quat->v.y,quat->v.z);
-        quat->v = quat->v.rotateVectorAboutAngleAndAxis(angleY,*vecAxis);
-        printf("%f\n",angleY);
-        printf("after rot %f,%f,%f\n",quat->v.x,quat->v.y,quat->v.z);
+        Vector *vtest= new Vector(0.f,1.f,0.f);
+        quat->v = quat->v.rotateVectorAboutAngleAndAxis(angleY,*vtest);
         //glRotatef(angleY, 0, 1, 0);
         Matrix4x4 m4 = quat->createMatrix();
         //glLoadMatrixf(m4.m);
         glMultMatrixf(m4.m);
-        for(int i = 0;i<16;i++){
-            printf("%f",m4.m[i]);
-        }
-        printf("\n");
         glTranslatef(-(body->x + body->posx), 0, -(body->z + body->posz));
         //glMultMatrixf()
         body->Draw();

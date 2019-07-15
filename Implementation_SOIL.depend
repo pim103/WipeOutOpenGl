@@ -1,0 +1,186 @@
+# depslib dependency file v1.0
+1561124888 source:d:\cours esgi\projetopengl\src\block.cpp
+	"../include/Block.h"
+
+1563209193 d:\cours esgi\projetopengl\include\block.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
+
+1563209193 d:\cours esgi\projetopengl\libs\glew-2.1.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1561122697 d:\cours esgi\projetopengl\include\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1561122697 d:\cours esgi\projetopengl\include\soil.h
+
+1563209195 source:d:\cours esgi\projetopengl\src\controller.cpp
+	<stdlib.h>
+	"../include/Vehicle.h"
+	"../include/Controller.h"
+
+1563209194 d:\cours esgi\projetopengl\include\vehicle.h
+	"Block.h"
+	"Quaternion.h"
+
+1563209194 d:\cours esgi\projetopengl\include\quaternion.h
+	"../include/Vector.h"
+	"../include/Matrix4x4.h"
+	<stdio.h>
+
+1563121335 d:\cours esgi\projetopengl\include\vector.h
+	<stdio.h>
+	<cmath>
+	<iostream>
+
+1563211218 d:\cours esgi\projetopengl\include\matrix4x4.h
+	"Vector.h"
+
+1563209193 d:\cours esgi\projetopengl\include\controller.h
+
+1563226044 source:d:\cours esgi\projetopengl\src\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<GL/glew.h>
+	<../common/GLShader.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"../include/glut.h"
+	"../include/SOIL.h"
+	"../include/Camera.h"
+	"../include/Map.h"
+	"../include/Vehicle.h"
+	"../include/Controller.h"
+	"Ship.hpp"
+
+1563209193 d:\cours esgi\projetopengl\common\glshader.h
+	<stdint.h>
+	<stdbool.h>
+
+1563124663 d:\cours esgi\projetopengl\include\camera.h
+
+1563209193 d:\cours esgi\projetopengl\include\map.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
+	"Camera.h"
+
+1563215137 d:\cours esgi\projetopengl\include\ship.hpp
+	"Vector.h"
+	"Quaternion.h"
+
+1561124573 source:d:\cours esgi\projetopengl\src\map.cpp
+	"../include/Map.h"
+	"../include/Block.h"
+
+1563209194 source:d:\cours esgi\projetopengl\src\quaternion.cpp
+	"../include/Quaternion.h"
+	<math.h>
+	"../include/Vector.h"
+	"../include/Matrix4x4.h"
+
+1563226102 source:d:\cours esgi\projetopengl\src\vector.cpp
+	"../include/Vector.h"
+	<cmath>
+	"../include/Quaternion.h"
+
+1563209300 source:d:\cours esgi\projetopengl\src\camera.cpp
+	"../include/Camera.h"
+	<math.h>
+	<stdio.h>
+	"Camera.h"
+	"Ship.hpp"
+	"Vehicle.h"
+
+1563226159 source:d:\cours esgi\projetopengl\src\vehicle.cpp
+	<math.h>
+	<stdio.h>
+	"../include/Block.h"
+	"../include/Controller.h"
+	"../include/Vehicle.h"
+	"../include/Map.h"
+	"../include/Quaternion.h"
+	"../include/Vector.h"
+
+1563209697 source:d:\cours esgi\projetopengl\common\glshader.c
+	"GL/glew.h"
+	"../common/GLShader.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1563212842 source:d:\cours esgi\projetopengl\src\geometry.cpp
+	<GLUT/glut.h>
+	<X11/Xlib.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<GL/glx.h>
+	<windows.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	"config.hpp"
+	"geometry.hpp"
+	"toolbox.hpp"
+
+1563209193 d:\cours esgi\projetopengl\include\config.hpp
+
+1563209193 d:\cours esgi\projetopengl\include\geometry.hpp
+
+1563209193 d:\cours esgi\projetopengl\include\toolbox.hpp
+	<time.h>
+	<iostream>
+
+1563209194 source:d:\cours esgi\projetopengl\src\matrix.cpp
+
+1563209194 source:d:\cours esgi\projetopengl\src\matrix4x4.cpp
+	"Matrix4x4.h"
+	<iostream>
+	<iomanip>
+	<stdio.h>
+	<stdlib.h>
+	"Vector.h"
+	"../include/Matrix4x4.h"
+
+1563218509 source:d:\cours esgi\projetopengl\src\ship.cpp
+	<GLUT/glut.h>
+	<X11/Xlib.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<GL/glx.h>
+	<windows.h>
+	<GL/glut.h>
+	<SOIL.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	"Controller.h"
+	"config.hpp"
+	"geometry.hpp"
+	"toolbox.hpp"
+	"Ship.hpp"
+
+1563209193 source:d:\cours esgi\projetopengl\src\toolbox.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<time.h>
+	<iostream>
+	<sstream>
+	"toolbox.hpp"
+

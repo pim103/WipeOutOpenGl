@@ -254,8 +254,8 @@
 1561124888 source:d:\cours esgi\projetopengl\src\block.cpp
 	"../include/Block.h"
 
-1561124888 d:\cours esgi\projetopengl\include\block.h
-	<windows.h>
+1563209193 d:\cours esgi\projetopengl\include\block.h
+	<GL/glew.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
@@ -272,11 +272,14 @@
 	"../include/Camera.h"
 	<math.h>
 
-1561122697 d:\cours esgi\projetopengl\include\camera.h
+1563124663 d:\cours esgi\projetopengl\include\camera.h
 
-1561127514 source:d:\cours esgi\projetopengl\src\main.cpp
+1563209193 source:d:\cours esgi\projetopengl\src\main.cpp
+	<stdio.h>
 	<stdlib.h>
 	<windows.h>
+	<GL/glew.h>
+	<../common/GLShader.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"../include/glut.h"
@@ -285,19 +288,21 @@
 	"../include/Map.h"
 	"../include/Vehicle.h"
 	"../include/Controller.h"
+	"Ship.hpp"
 
-1561124888 d:\cours esgi\projetopengl\include\map.h
-	<windows.h>
+1563209193 d:\cours esgi\projetopengl\include\map.h
+	<GL/glew.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 	"Camera.h"
 
-1561124655 d:\cours esgi\projetopengl\include\vehicle.h
+1563209194 d:\cours esgi\projetopengl\include\vehicle.h
 	"Block.h"
+	"Quaternion.h"
 
-1561124946 d:\cours esgi\projetopengl\include\controller.h
+1563209193 d:\cours esgi\projetopengl\include\controller.h
 
 1561124573 source:d:\cours esgi\projetopengl\src\map.cpp
 	"../include/Map.h"
@@ -308,13 +313,15 @@
 	"../include/Vehicle.h"
 	"../include/Map.h"
 
-1563121609 source:d:\cours esgi\projetopengl\src\quaternion.cpp
+1563209194 source:d:\cours esgi\projetopengl\src\quaternion.cpp
 	"../include/Quaternion.h"
 	<math.h>
 	"../include/Vector.h"
+	"../include/Matrix4x4.h"
 
-1563121406 d:\cours esgi\projetopengl\include\quaternion.h
+1563209194 d:\cours esgi\projetopengl\include\quaternion.h
 	"../include/Vector.h"
+	"../include/Matrix4x4.h"
 	<stdio.h>
 
 1563121335 d:\cours esgi\projetopengl\include\vector.h
@@ -322,13 +329,12 @@
 	<cmath>
 	<iostream>
 
-1563121292 source:d:\cours esgi\projetopengl\src\vector.cpp
+1563209194 source:d:\cours esgi\projetopengl\src\vector.cpp
 	"../include/Vector.h"
 	<cmath>
 	"../include/Quaternion.h"
 
-1563123685 source:d:\cours esgi\projetopengl\src\matrix.cpp
-	"Matrix.h"
+1563209194 source:d:\cours esgi\projetopengl\src\matrix.cpp
 
 1563123691 d:\cours esgi\projetopengl\include\matrix.h
 	<stdio.h>
@@ -428,4 +434,28 @@
 1557244063 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.h
 	<stdint.h>
 	<stdbool.h>
+
+1563209195 source:d:\cours esgi\projetopengl\src\controller.cpp
+	<stdlib.h>
+	"../include/Vehicle.h"
+	"../include/Controller.h"
+
+1563209194 d:\cours esgi\projetopengl\include\matrix4x4.h
+	"Vector.h"
+	"GL/glut.h"
+
+1563209193 d:\cours esgi\projetopengl\common\glshader.h
+	<stdint.h>
+	<stdbool.h>
+
+1563209193 d:\cours esgi\projetopengl\include\ship.hpp
+
+1563209194 source:d:\cours esgi\projetopengl\src\matrix4x4.cpp
+	"Matrix4x4.h"
+	<iostream>
+	<iomanip>
+	<stdio.h>
+	<stdlib.h>
+	"Vector.h"
+	"../include/Matrix4x4.h"
 

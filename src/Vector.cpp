@@ -116,21 +116,17 @@ Vector Vector::rotateVectorAboutAngleAndAxis(float uAngle, Vector& uAxis){
 
     //normalize the axis
     uAxis.normalize();
-    printf("normalized %f,%f,%f\n",uAxis.x,uAxis.y,uAxis.z);
     //create the real quaternion
     Quaternion q(uAngle,uAxis);
 
     //convert quaternion to unit norm quaternion
     q.convertToUnitNormQuaternion();
-    printf("q1 %f,%f,%f\n",q.v.x,q.v.y,q.v.z);
     //Get the inverse of the quaternion
     Quaternion qInverse=q.inverse();
-    printf("q2 %f,%f,%f\n",q.v.x,q.v.y,q.v.z);
     //rotate the quaternion
     Quaternion rotatedVector=q*p*qInverse;
 
     //return the vector part of the quaternion
-    printf("rotatedVector %f,%f,%f\n",rotatedVector.v.x,rotatedVector.v.y,rotatedVector.v.z);
     return rotatedVector.v;
 }
 
