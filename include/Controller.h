@@ -11,6 +11,8 @@ class Controller {
         bool wantToMoveBack;
         bool wantToMoveRight;
         bool wantToMoveLeft;
+
+        float _doRoll;
     private:
     protected:
 };

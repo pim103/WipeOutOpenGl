@@ -40,7 +40,7 @@ Vehicle::Vehicle(){
     this->inputRotation = 0.0f;
     this->lockedOnVehicle = true;
 
-    this->speedVehicle = 0.1;
+    this->speedVehicle = 0.3;
 }
 
 void Vehicle::UpdateVehicleMovement()
@@ -53,8 +53,8 @@ void Vehicle::UpdateVehicleMovement()
     }else if(controller->wantToMoveBack)
     {
         //dirX -= speedVehicle;
-        body->posx += speedVehicle;
-        body->posz -= speedVehicle;
+        body->posx += dirX * speedVehicle;
+        body->posz -= dirZ * speedVehicle;
     }
 
     if(controller->wantToMoveRight)
@@ -64,7 +64,6 @@ void Vehicle::UpdateVehicleMovement()
             angleY = 360;
         }
 
-        inputRotation -= 5;
         OrienterVehicle();
     }
     if(controller->wantToMoveLeft)
@@ -74,7 +73,6 @@ void Vehicle::UpdateVehicleMovement()
             angleY = 0;
         }
 
-        inputRotation += 5;
         OrienterVehicle();
     }
 }
@@ -93,20 +91,6 @@ void Vehicle::CreateBody()
 
 void Vehicle::DrawBody()
 {
-    /*
-    int goForward = 0;
-    if (controller->wantToMoveForward) {
-        goForward = 1;
-    } else if(controller->wantToMoveBack) {
-        goForward = -1;
-    } else {
-        goForward = 0;
-    }
-
-    body->posx += goForward * (dirX * speedVehicle);
-    body->posz += goForward * (dirZ * speedVehicle);
-    */
-
     glPushMatrix();
         glTranslatef(body->x + body->posx, 0, body->z + body->posz);
         glRotatef(angleY, 0, 1, 0);
@@ -117,19 +101,8 @@ void Vehicle::DrawBody()
 
 void Vehicle::OrienterVehicle()
 {
-
-    deltaAngleX = (inputRotation - xOrigin) * sensibility;
-    //deltaAngleX = angleY;
-
-    // Correction de l'angle ]-Pi; Pi[
-
-    while (deltaAngleX + angleH > M_PI)
-        deltaAngleX -= M_PI * 2;
-    while (deltaAngleX + angleH < -M_PI)
-        deltaAngleX += M_PI * 2;
-
-    dirX = sin(angleH + deltaAngleX);
-    dirZ = -cos(angleH + deltaAngleX);
+    dirX = sin(angleY * (M_PI / 180));
+    dirZ = -cos(angleY * (M_PI/180));
 }
 
 void Vehicle::releaseDir()

@@ -12,7 +12,9 @@
 #include "../include/Map.h"
 #include "../include/Vehicle.h"
 #include "../include/Controller.h"
+#include "Ship.hpp"
 
+Ship *ship = Ship::getInstance();
 
 // Objet Camera
 Camera *cam = new Camera();
@@ -142,7 +144,8 @@ void mouseButton(int button, int state, int x, int y)
 void computePos(int inutile)
 {
     cam->updatePos();
-    v->UpdateVehicleMovement();
+    //v->UpdateVehicleMovement();
+    ship->UpdateVehicleMovement();
     glutTimerFunc(10, computePos, 0);
 }
 
@@ -152,15 +155,24 @@ void renderScene(void)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
     // D�finition de la cam�ra
-    gluLookAt(  cam->posx, cam->posy, cam->posz,
-                cam->posx+cam->dirx, cam->posy+cam->diry,  cam->posz+cam->dirz,
-                0.0f, 1.0f,  0.0f
-                );
+    if(v->lockedOnVehicle) {
+        gluLookAt(  cam->posx, cam->posy, cam->posz,
+                    cam->posx - ship->dirX, cam->posy+cam->diry,  cam->posz + ship->dirZ,
+                    0.0f, 1.0f,  0.0f
+                    );
+    } else {
+        gluLookAt(  cam->posx, cam->posy, cam->posz,
+                    cam->posx+cam->dirx, cam->posy+cam->diry,  cam->posz+cam->dirz,
+                    0.0f, 1.0f,  0.0f
+                    );
+    }
 
     m->DrawGround();
     m->DrawSkybox(cam);
 
     v->DrawBody();
+
+    ship->display();
 
     glutSwapBuffers();
 }

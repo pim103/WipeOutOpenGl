@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 #include "Camera.h"
+#include "Ship.hpp"
 #include "Vehicle.h"
-
 
 #ifndef M_PI
     #define M_PI 3.14159265358979323846
@@ -45,11 +45,12 @@ Camera::Camera()
 
 void Camera::updatePos()
 {
+    Ship *ship = Ship::getInstance();
     if(v->lockedOnVehicle)
     {
-        posx = v->body->posx + 0.5;
-        posy = v->body->posy + 3;
-        posz = v->body->posz + 1;
+        posx = ship->posX;
+        posy = 3;
+        posz = ship->posZ;
     }
     else if (deltaForward || deltaStrafe)
     {

@@ -11,6 +11,7 @@ Controller::Controller()
     this->wantToMoveBack = false;
     this->wantToMoveLeft = false;
     this->wantToMoveRight = false;
+    this->_doRoll = false;
 }
 
 void Controller::GetPlayerIntent(unsigned char key){
@@ -24,6 +25,7 @@ void Controller::GetPlayerIntent(unsigned char key){
         case 'q':
             wantToMoveLeft = true;
             v->changeDir();
+            _doRoll = 1;
             break;
         case 's':
             wantToMoveBack = true;
@@ -31,6 +33,7 @@ void Controller::GetPlayerIntent(unsigned char key){
         case 'd':
             wantToMoveRight = true;
             v->changeDir();
+            _doRoll = -1;
             break;
     }
 }
@@ -44,6 +47,7 @@ void Controller::ReleasePlayerIntent(unsigned char key){
         case 'q':
             wantToMoveLeft = false;
             v->releaseDir();
+            _doRoll = 0;
             break;
         case 's':
             wantToMoveBack = false;
@@ -52,6 +56,7 @@ void Controller::ReleasePlayerIntent(unsigned char key){
         case 'd':
             wantToMoveRight = false;
             v->releaseDir();
+            _doRoll = 0;
             break;
     }
 }
