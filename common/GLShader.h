@@ -16,13 +16,14 @@ typedef struct _GLShader
 	//uint32_t _FragmentShader;
 } GLShader;
 
-extern bool CreateProgram(GLShader* shader);
+bool CreateProgram(GLShader* shader);
 
-extern bool LoadVertexShader(GLShader shader, const char* filename);
-extern bool LoadFragmentShader(GLShader shader, const char* filename);
+bool LoadVertexShader(GLShader shader, const char* filename);
 
-extern bool LinkProgram(GLShader shader);
+bool LoadFragmentShader(GLShader shader, const char* filename);
 
-extern bool DestroyProgram(GLShader* shader);
+bool LinkProgram(GLShader shader);
+
+bool DestroyProgram(GLShader* shader);
 
 #endif // OPENGL_COMMON_GLSHADER_H
