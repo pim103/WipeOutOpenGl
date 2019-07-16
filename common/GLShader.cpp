@@ -1,5 +1,5 @@
-#include "GL/glew.h"
 #include "../common/GLShader.h"
+#include "GL/glew.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -30,7 +30,7 @@ char* LoadSource(const char *filename)
 	rewind(fp);
 
 	/* on alloue de la memoire pour y placer notre code source */
-	src = (char*)malloc(size + 1); /* +1 pour le caractere de fin de chaine '\0' */
+	src = (char *)malloc(size + 1); /* +1 pour le caractere de fin de chaine '\0' */
 	if (src == NULL)
 	{
 		fclose(fp);
@@ -81,7 +81,7 @@ uint32_t CompileShader(const char* filename, uint32_t type)
 		glGetShaderiv(shaderObject, GL_INFO_LOG_LENGTH, &logsize);
 
 		/* on alloue un espace memoire dans lequel OpenGL ecrira le message */
-		log = (char*)malloc(logsize + 1);
+		log = (char *)malloc(logsize + 1);
 		if (log == NULL)
 		{
 			fprintf(stderr, "impossible d'allouer de la memoire !\n");
@@ -123,7 +123,6 @@ bool LoadFragmentShader(GLShader shader, const char* filename)
 bool CreateProgram(GLShader* shader)
 {
 	shader->_Program = glCreateProgram();
-
 	return true;
 }
 
@@ -145,7 +144,7 @@ bool LinkProgram(GLShader shader)
 		glGetProgramiv(shader._Program, GL_INFO_LOG_LENGTH, &logsize);
 
 		/* on alloue un espace memoire dans lequel OpenGL ecrira le message */
-		log = (char*)malloc(logsize + 1);
+		log = (char *)malloc(logsize + 1);
 		if (log == NULL)
 		{
 			fprintf(stderr, "impossible d'allouer de la memoire !\n");
@@ -155,7 +154,7 @@ bool LinkProgram(GLShader shader)
 		memset(log, '\0', logsize + 1);
 
 		glGetProgramInfoLog(shader._Program, logsize, &logsize, log);
-		fprintf(stderr, "impossible de lier le programme", log);
+		fprintf(stderr, "impossible de lier le programme : %s", log);
 
 		/* ne pas oublier de liberer la memoire  */
 		free(log);

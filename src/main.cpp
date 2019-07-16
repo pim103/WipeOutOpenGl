@@ -3,13 +3,14 @@
 
 #include <windows.h>
 #include <GL/glew.h>
-#include <../common/GLShader.h>
+#include "../common/GLShader.h"
 #include <GL/gl.h>
 #include <GL/glu.h>
 
 #include "../include/glut.h"
 #include "../include/SOIL.h"
 
+#include "ShaderController.h"
 #include "../include/Camera.h"
 #include "../include/Map.h"
 #include "../include/Vehicle.h"
@@ -17,6 +18,8 @@
 #include "Ship.hpp"
 
 Ship *ship = Ship::getInstance();
+
+ShaderController *shaderController = new ShaderController();
 
 // Objet Camera
 Camera *cam = new Camera();
@@ -170,13 +173,12 @@ void renderScene(void)
                     0.0f, 1.0f,  0.0f
                     );
     }
-
     m->DrawGround();
-    m->DrawSkybox(cam);
+    //m->DrawSkybox(cam);
 
-    v->DrawBody();
+    //v->DrawBody();
 
-    ship->display();
+    //ship->display();
 
     glutSwapBuffers();
 }
@@ -185,7 +187,9 @@ void LoadTextures()
 {
     m->LoadTextures();
     v->CreateBody();
+    shaderController->LoadShaders();
 }
+
 
 int main(int argc, char **argv)
 {
@@ -194,7 +198,9 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
     glutInitWindowPosition(100,100);
     glutInitWindowSize(320,320);
-    glutCreateWindow("Impl�mentation :: Textures");
+    glutCreateWindow("Implémentation :: Textures");
+
+    glewInit();
 
     /** FONCTIONS GLUT **/
     glutDisplayFunc(renderScene);

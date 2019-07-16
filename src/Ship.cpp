@@ -17,6 +17,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "Quaternion.h"
+#include "Vector.h"
 #include "Controller.h"
 #include "config.hpp"
 #include "geometry.hpp"

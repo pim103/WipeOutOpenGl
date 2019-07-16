@@ -11,7 +11,7 @@ typedef struct _GLShader
 	uint32_t _Program;
 	//Un Vertex Shader est execute pour chaque sommet (vertex)
 	//uint32_t _VertexShader;
-	//Un Fragment Shader est execute pour chaque "pixel" 
+	//Un Fragment Shader est execute pour chaque "pixel"
 	//lors de la rasterization/remplissage de la primitive
 	//uint32_t _FragmentShader;
 } GLShader;

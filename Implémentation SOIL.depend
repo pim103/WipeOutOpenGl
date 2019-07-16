@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1395931851 source:c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\main.cpp
+1395931851 source:c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -7,25 +7,25 @@
 	"SOIL.h"
 	"Camera.h"
 
-976663372 c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\include\glut.h
+976663372 c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\include\glut.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-1215447208 c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\include\soil.h
+1215447208 c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\include\soil.h
 
-1395960066 c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\include\camera.h
+1395960066 c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\include\camera.h
 
-1395997219 source:c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\src\camera.cpp
+1395997219 source:c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\src\camera.cpp
 	"Camera.h"
 	<math.h>
 
-1395931448 source:c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\src\skybox.cpp
+1395931448 source:c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\src\skybox.cpp
 	"Skybox.h"
 
-1395931448 c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\include\skybox.h
+1395931448 c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\include\skybox.h
 
-1395932074 source:e:\dropbox\textures opengl avec soil\implémentation soil\main.cpp
+1395932074 source:e:\dropbox\textures opengl avec soil\implï¿½mentation soil\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -33,20 +33,20 @@
 	"SOIL.h"
 	"Camera.h"
 
-976663372 e:\dropbox\textures opengl avec soil\implémentation soil\include\glut.h
+976663372 e:\dropbox\textures opengl avec soil\implï¿½mentation soil\include\glut.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-1215447208 e:\dropbox\textures opengl avec soil\implémentation soil\include\soil.h
+1215447208 e:\dropbox\textures opengl avec soil\implï¿½mentation soil\include\soil.h
 
-1395960066 e:\dropbox\textures opengl avec soil\implémentation soil\include\camera.h
+1395960066 e:\dropbox\textures opengl avec soil\implï¿½mentation soil\include\camera.h
 
-1395958710 source:e:\dropbox\textures opengl avec soil\implémentation soil\src\camera.cpp
+1395958710 source:e:\dropbox\textures opengl avec soil\implï¿½mentation soil\src\camera.cpp
 	"Camera.h"
 	<math.h>
 
-1395959388 source:e:\dropbox\textures opengl avec soil\implémentation soil\src\main.cpp
+1395959388 source:e:\dropbox\textures opengl avec soil\implï¿½mentation soil\src\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -55,26 +55,26 @@
 	"Camera.h"
 	"Map.h"
 
-1395959423 e:\dropbox\textures opengl avec soil\implémentation soil\include\map.h
+1395959423 e:\dropbox\textures opengl avec soil\implï¿½mentation soil\include\map.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 	"Camera.h"
 
-1395959690 source:e:\dropbox\textures opengl avec soil\implémentation soil\src\map.cpp
+1395959690 source:e:\dropbox\textures opengl avec soil\implï¿½mentation soil\src\map.cpp
 	"Map.h"
 
-1396017310 source:c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\src\block.cpp
+1396017310 source:c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\src\block.cpp
 	"Block.h"
 
-1396017089 c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\include\block.h
+1396017089 c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\include\block.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 
-1396017016 source:c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\src\main.cpp
+1396017016 source:c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\src\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -83,40 +83,40 @@
 	"Camera.h"
 	"Map.h"
 
-1395959423 c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\include\map.h
+1395959423 c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\include\map.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 	"Camera.h"
 
-1396018038 source:c:\users\fabien\dropbox\textures opengl avec soil\implémentation soil\src\map.cpp
+1396018038 source:c:\users\fabien\dropbox\textures opengl avec soil\implï¿½mentation soil\src\map.cpp
 	"Map.h"
 	"Block.h"
 
-1396018710 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\src\block.cpp
+1396018710 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\src\block.cpp
 	"Block.h"
 
-1396017090 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\include\block.h
+1396017090 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\include\block.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 
-976663372 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\include\glut.h
+976663372 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\include\glut.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-1215450808 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\include\soil.h
+1215450808 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\include\soil.h
 
-1395997220 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\src\camera.cpp
+1395997220 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\src\camera.cpp
 	"Camera.h"
 	<math.h>
 
-1395960066 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\include\camera.h
+1395960066 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\include\camera.h
 
-1396017018 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\src\main.cpp
+1396017018 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\src\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -125,40 +125,40 @@
 	"Camera.h"
 	"Map.h"
 
-1395959424 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\include\map.h
+1395959424 c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\include\map.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 	"Camera.h"
 
-1396018930 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implémentation soil\src\map.cpp
+1396018930 source:c:\users\marc\desktop\textures opengl avec soil\textures opengl avec soil\implï¿½mentation soil\src\map.cpp
 	"Map.h"
 	"Block.h"
 
-1396220518 source:c:\users\marc\desktop\implémentation soil\src\block.cpp
+1396220518 source:c:\users\marc\desktop\implï¿½mentation soil\src\block.cpp
 	"Block.h"
 
-1396220518 c:\users\marc\desktop\implémentation soil\include\block.h
+1396220518 c:\users\marc\desktop\implï¿½mentation soil\include\block.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 
-976663372 c:\users\marc\desktop\implémentation soil\include\glut.h
+976663372 c:\users\marc\desktop\implï¿½mentation soil\include\glut.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-1215450808 c:\users\marc\desktop\implémentation soil\include\soil.h
+1215450808 c:\users\marc\desktop\implï¿½mentation soil\include\soil.h
 
-1395997220 source:c:\users\marc\desktop\implémentation soil\src\camera.cpp
+1395997220 source:c:\users\marc\desktop\implï¿½mentation soil\src\camera.cpp
 	"Camera.h"
 	<math.h>
 
-1395960066 c:\users\marc\desktop\implémentation soil\include\camera.h
+1395960066 c:\users\marc\desktop\implï¿½mentation soil\include\camera.h
 
-1396017018 source:c:\users\marc\desktop\implémentation soil\src\main.cpp
+1396017018 source:c:\users\marc\desktop\implï¿½mentation soil\src\main.cpp
 	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -167,35 +167,35 @@
 	"Camera.h"
 	"Map.h"
 
-1395959424 c:\users\marc\desktop\implémentation soil\include\map.h
+1395959424 c:\users\marc\desktop\implï¿½mentation soil\include\map.h
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 	"Camera.h"
 
-1396220566 source:c:\users\marc\desktop\implémentation soil\src\map.cpp
+1396220566 source:c:\users\marc\desktop\implï¿½mentation soil\src\map.cpp
 	"Map.h"
 	"Block.h"
 
-1563124508 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\block.cpp
+1563124508 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\block.cpp
 	"../include/Block.h"
 
-1563204670 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
+1563204670 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
 	<GL/glew.h>
 	<GL/gl.h>
 	<GL/glu.h>
 	"glut.h"
 	"SOIL.h"
 
-976666972 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\glut.h
+976666972 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\glut.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-1215454408 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\soil.h
+1215454408 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\soil.h
 
-1563204410 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
+1563204410 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
 	"../include/Camera.h"
 	<math.h>
 	<stdio.h>
@@ -203,25 +203,26 @@
 	"Ship.hpp"
 	"Vehicle.h"
 
-1563124520 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\camera.h
+1563124520 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\camera.h
 
-1563204828 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
+1563305562 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<GL/glew.h>
-	<../common/GLShader.h>
+	"../common/GLShader.h"
 	<GL/gl.h>
 	<GL/glu.h>
 	"../include/glut.h"
 	"../include/SOIL.h"
+	"ShaderController.h"
 	"../include/Camera.h"
 	"../include/Map.h"
 	"../include/Vehicle.h"
 	"../include/Controller.h"
 	"Ship.hpp"
 
-1563204672 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
+1563305590 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
 	<GL/glew.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -229,11 +230,12 @@
 	"SOIL.h"
 	"Camera.h"
 
-1563124508 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\map.cpp
+1563304671 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\map.cpp
 	"../include/Map.h"
 	"../include/Block.h"
+	"ShaderController.h"
 
-1563188459 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vehicle.cpp
+1563188459 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vehicle.cpp
 	<math.h>
 	<stdio.h>
 	"Block.h"
@@ -241,15 +243,15 @@
 	"Vehicle.h"
 	"Map.h"
 
-1563124541 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vehicle.h
+1563124541 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vehicle.h
 	"Block.h"
 
-1563191260 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\controller.cpp
+1563191260 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\controller.cpp
 	<stdlib.h>
 	"Vehicle.h"
 	"Controller.h"
 
-1563191091 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\controller.h
+1563191091 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\controller.h
 
 1561124888 source:d:\cours esgi\projetopengl\src\block.cpp
 	"../include/Block.h"
@@ -341,26 +343,26 @@
 	<iostream>
 	"Vector.h"
 
-1563124510 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\quaternion.cpp
+1563124510 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\quaternion.cpp
 	"../include/Quaternion.h"
 	<math.h>
 	"../include/Vector.h"
 
-1563124510 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\quaternion.h
+1563124510 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\quaternion.h
 	"../include/Vector.h"
 	<stdio.h>
 
-1563124510 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vector.h
+1563124510 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vector.h
 	<stdio.h>
 	<cmath>
 	<iostream>
 
-1563124510 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vector.cpp
+1563124510 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vector.cpp
 	"../include/Vector.h"
 	<cmath>
 	"../include/Quaternion.h"
 
-1563187130 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\geometry.cpp
+1563187130 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\geometry.cpp
 	<GLUT/glut.h>
 	<X11/Xlib.h>
 	<GL/gl.h>
@@ -375,17 +377,17 @@
 	"geometry.hpp"
 	"toolbox.hpp"
 
-1526560062 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\config.hpp
+1526560062 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\config.hpp
 
-1526558329 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\glut_tools.hpp
+1526558329 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\glut_tools.hpp
 
-1522767667 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\geometry.hpp
+1522767667 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\geometry.hpp
 
-1526558367 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\toolbox.hpp
+1526558367 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\toolbox.hpp
 	<time.h>
 	<iostream>
 
-1563191297 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\ship.cpp
+1563191297 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\ship.cpp
 	<GLUT/glut.h>
 	<X11/Xlib.h>
 	<GL/gl.h>
@@ -403,9 +405,9 @@
 	"toolbox.hpp"
 	"Ship.hpp"
 
-1563190986 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\ship.hpp
+1563190986 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\ship.hpp
 
-1563187525 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\toolbox.cpp
+1563187525 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\toolbox.cpp
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -415,12 +417,74 @@
 	<sstream>
 	"toolbox.hpp"
 
-1561564273 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.c
+1561564273 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.c
 	"GL/glew.h"
 	"../common/GLShader.h"
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
+
+1561401962 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\libs\glew-2.1.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1563208365 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.h
+	<stdint.h>
+	<stdbool.h>
+
+1563211959 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\shadercontroller.h
+	"../common/GLShader.h"
+
+1563213819 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\shadercontroller.cpp
+	<stdio.h>
+	<stdlib.h>
+	"../common/GLShader.h"
+	"ShaderController.h"
+
+1563208928 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\glshader.h
+	<stdint.h>
+	<stdbool.h>
+
+1563208959 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\glshader.c
+	"GL/glew.h"
+	"GLShader.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1563208365 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.h
+	<stdint.h>
+	<stdbool.h>
+
+1563213160 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.cpp
+	"../common/GLShader.h"
+	"GL/glew.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1563124510 source:d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\src\matrix.cpp
+	"Matrix.h"
+
+1563124510 d:\onedrive\documents\esgi 3eme annï¿½e\infographie - m. bianchini\repowipeout\wipeoutopengl\include\matrix.h
+	<stdio.h>
+	<iostream>
+	"Vector.h"
+
+1563124508 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\block.cpp
+	"../include/Block.h"
+
+1563204670 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\block.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
 
 1561401962 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\libs\glew-2.1.0\include\gl\glew.h
 	<stddef.h>
@@ -431,26 +495,179 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-1557244063 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.h
-	<stdint.h>
-	<stdbool.h>
+976666972 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
 
-1563209195 source:d:\cours esgi\projetopengl\src\controller.cpp
+1215454408 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\soil.h
+
+1563204410 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\camera.cpp
+	"../include/Camera.h"
+	<math.h>
+	<stdio.h>
+	"Camera.h"
+	"Ship.hpp"
+	"Vehicle.h"
+
+1563124520 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\camera.h
+
+1563306072 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\ship.hpp
+	"Vector.h"
+	"Quaternion.h"
+
+1563124510 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vector.h
+	<stdio.h>
+	<cmath>
+	<iostream>
+
+1563306072 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\quaternion.h
+	"../include/Vector.h"
+	"../include/Matrix4x4.h"
+	<stdio.h>
+
+1563306072 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\matrix4x4.h
+	"Vector.h"
+
+1563306072 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\vehicle.h
+	"Block.h"
+	"Quaternion.h"
+
+1563306072 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\controller.cpp
 	<stdlib.h>
 	"../include/Vehicle.h"
 	"../include/Controller.h"
 
-1563209194 d:\cours esgi\projetopengl\include\matrix4x4.h
-	"Vector.h"
-	"GL/glut.h"
+1563191091 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\controller.h
 
-1563209193 d:\cours esgi\projetopengl\common\glshader.h
+1563306072 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\geometry.cpp
+	<GLUT/glut.h>
+	<X11/Xlib.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<GL/glx.h>
+	<windows.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	"config.hpp"
+	"geometry.hpp"
+	"toolbox.hpp"
+
+1526560062 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\config.hpp
+
+1522767667 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\geometry.hpp
+
+1526558367 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\toolbox.hpp
+	<time.h>
+	<iostream>
+
+1563308609 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<GL/glew.h>
+	"../common/GLShader.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	"../include/glut.h"
+	"../include/SOIL.h"
+	"ShaderController.h"
+	"../include/Camera.h"
+	"../include/Map.h"
+	"../include/Vehicle.h"
+	"../include/Controller.h"
+	"Ship.hpp"
+
+1563306507 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.h
 	<stdint.h>
 	<stdbool.h>
 
-1563209193 d:\cours esgi\projetopengl\include\ship.hpp
+1563306074 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\shadercontroller.h
+	"../common/GLShader.h"
 
-1563209194 source:d:\cours esgi\projetopengl\src\matrix4x4.cpp
+1563306074 d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\include\map.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"glut.h"
+	"SOIL.h"
+	"Camera.h"
+
+1563309919 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\map.cpp
+	"../include/Map.h"
+	"../include/Block.h"
+	"Quaternion.h"
+	"Vector.h"
+	"ShaderController.h"
+
+1563306072 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\matrix.cpp
+
+1563306196 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\quaternion.cpp
+	"../include/Quaternion.h"
+	<math.h>
+	"../include/Vector.h"
+	"../include/Matrix4x4.h"
+
+1563306483 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\shadercontroller.cpp
+	<stdio.h>
+	<stdlib.h>
+	"../common/GLShader.h"
+	"ShaderController.h"
+
+1563306795 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\ship.cpp
+	<GLUT/glut.h>
+	<X11/Xlib.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<GL/glx.h>
+	<windows.h>
+	<GL/glut.h>
+	<SOIL.h>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	"Quaternion.h"
+	"Vector.h"
+	"Controller.h"
+	"config.hpp"
+	"geometry.hpp"
+	"toolbox.hpp"
+	"Ship.hpp"
+
+1563306840 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\toolbox.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<time.h>
+	<iostream>
+	<sstream>
+	"toolbox.hpp"
+
+1563306072 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vector.cpp
+	"../include/Vector.h"
+	<cmath>
+	"../include/Quaternion.h"
+
+1563306072 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\vehicle.cpp
+	<math.h>
+	<stdio.h>
+	"../include/Block.h"
+	"../include/Controller.h"
+	"../include/Vehicle.h"
+	"../include/Map.h"
+	"../include/Quaternion.h"
+	"../include/Vector.h"
+
+1563306074 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\common\glshader.cpp
+	"../common/GLShader.h"
+	"GL/glew.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1563306072 source:d:\onedrive\documents\esgi 3eme année\infographie - m. bianchini\repowipeout\wipeoutopengl\src\matrix4x4.cpp
 	"Matrix4x4.h"
 	<iostream>
 	<iomanip>

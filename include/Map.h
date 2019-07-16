@@ -23,6 +23,8 @@ class Map
         void DrawSkybox(Camera *cam);
     protected:
     private:
+        unsigned short groundIndices[6];
+        float groundVertices[12];
 };
 
 #endif // MAP_H

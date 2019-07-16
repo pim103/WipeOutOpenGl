@@ -47,6 +47,7 @@ double getSin(long time) {
   return sin(time);
 }
 
+/*
 std::string toString(double n){
   std::ostringstream buf;
   buf << n;
@@ -54,3 +55,4 @@ std::string toString(double n){
 
   return str;
 }
+*/

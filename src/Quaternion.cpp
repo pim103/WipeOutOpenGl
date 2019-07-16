@@ -6,6 +6,14 @@
 #define DegreesToRad(angle) angle*M_PI/180
 #define RadToDegrees(angle) angle*180/M_PI
 
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+
+#ifndef M_PI_2
+    #define M_PI_2 3.14159265358979323846/2
+#endif
+
 Quaternion::Quaternion(float uS,Vector& uV):s(uS),v(uV){}
 
 void Quaternion::operator+=(const Quaternion& q) {
